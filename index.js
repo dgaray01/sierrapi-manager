@@ -11,7 +11,7 @@ const mailgun = require("mailgun-js");
 const DOMAIN = 'YOUR_DOMAIN_NAME';
 //const mg = mailgun({apiKey: api_key, domain: DOMAIN});
 
-
+app.use(express.static("views"));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
@@ -19,9 +19,13 @@ app.get('/', function(req, res) {
 });
 
 
-app.get('/about', function(req, res) {
-  res.render('pages/about');
-});
+app.get('/login', function(req, res) {
+	res.render('login');
+  });
+
+  app.get('/settings', function(req, res) {
+	res.render('settings');
+  });
 
 app.listen(8080);
 console.log('Server is listening on port 8080');
