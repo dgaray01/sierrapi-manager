@@ -21,10 +21,10 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="/index"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link active" href="/settings"><i class="fa fa-gear"></i><span>Settings</span></a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="/login"><i class="far fa-user-circle"></i>Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/logout"><i class="far fa-user-circle"></i>Logout</a></li>
                     <li class="nav-item"></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"></div>
@@ -200,11 +200,11 @@
                                             <form>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Frequency</strong><br></label><input class="form-control" type="text" id="username" placeholder="99.1 FM" name="frequency"></div>
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Frequency</strong><br></label><input class="form-control" type="number" min="87.5" max="108.0" step="0.1" id="username" placeholder="99.1 FM" name="frequency"></div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="mb-3"><label class="form-label" for="email"><strong>Type</strong><select class="form-select d-inline-block form-select form-select-sm">
-                                                                    <option value="Live" selected="">Live</option>
+                                                                    <option value="PreRecorded" selected="">PreRecorded</option>
                                                                     <option value="Microphone">Microphone</option>
                                                                 </select></label></div>
                                                     </div>
@@ -224,10 +224,10 @@
                                         </div>
                                         <div class="card-body">
                                             <form>
-                                                <div class="mb-3"><label class="form-label" for="address"><strong>Wifi SSID</strong></label><input class="form-control" type="text" id="address" placeholder="SierraPi" name="address"></div>
+                                                <div class="mb-3"><label class="form-label" for="address"><strong>Wifi SSID</strong></label><input class="form-control" type="text" id="ssid" placeholder="SierraPi" name="address"></div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="city"><strong>Password</strong></label><input class="form-control" type="text" id="city" placeholder="admin123" name="city"></div>
+                                                        <div class="mb-3"><label class="form-label" for="city"><strong>Password</strong></label><input class="form-control" type="text" id="password" placeholder="admin123" name="city"></div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="mb-3"><label class="form-label" for="country"><strong>Country</strong><select class="form-select d-inline-block form-select form-select-sm">
