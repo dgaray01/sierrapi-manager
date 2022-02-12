@@ -6,6 +6,7 @@ depending on your router settings, this is a website
 that manages your SierraPI configuration.
 */
 var express = require('express');
+const si = require('systeminformation');
 var app = express();
 const mailgun = require("mailgun-js");
 const DOMAIN = 'YOUR_DOMAIN_NAME';
@@ -20,6 +21,7 @@ app.use(sessions({
     resave: false
 }));
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -32,10 +34,12 @@ const password = 'admin123'
 app.use(express.static("views"));
 app.set('view engine', 'ejs');
 
-app.get('/',(req,res) => {
+app.get('/',async (req,res) => {
+	let temp = await si.cpuTemperature()
+	console.log(temp)
     session=req.session;
     if(session.userid){
-        res.render("index")
+        res.render("index", { temp: temp.main, transmitting: "Yes", ammountFiles: "3" });
     }else
     res.render('login')
 });
