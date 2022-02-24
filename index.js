@@ -52,7 +52,7 @@ app.post('/user',(req,res) => {
         res.redirect("/")
     }
     else{
-        res.send('Invalid username or password');
+        res.render("loginerror")
     }
 })
 
