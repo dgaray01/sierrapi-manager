@@ -35,9 +35,12 @@ Recomended apps:
 1) https://www.raspberrypi.com/software/
 2) https://www.balena.io/etcher/
 
-Login info:
+#### Login info:
+
 Hostname: ``sierrapi``
+
 User: ``root`` ``pi``
+
 Password: ``admin123``
 
 ---
