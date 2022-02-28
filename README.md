@@ -16,56 +16,10 @@ and more for your SierraPi!
 - Check RAM and Disk usage
 - Restart and power off your SierraPi
 - Add, archive and remove songs for transmission
-- Change your transmission frequency, wifi password and wifi SSID
+- Change your wifi hotspot password and wifi SSID
 - Secure and fast.
 
 ## Installation
-
-___
-
-#### Manual
-SierraPi Manager requires [Node.js](https://nodejs.org/) v10+ and Raspbian Full to run.
-
-Install the dependencies needed
-```sh
-sudo apt-get update
-sudo apt-get install make build-essential
-```
-
-Install the FM_Transmitter
-```sh
-cd /home/pi
-git clone https://github.com/markondej/fm_transmitter
-cd fm_transmitter
-mkdir song && mkdir archive
-echo "performance"| sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-Now let's install the power button for the SierraPi
-```sh
-cd /home/pi
-git clone https://github.com/dgaray01/power-button-rpi
-cd power-button-pi
-./pi-power-button/script/install
-```
-Now press the button and it should turn the SierraPi off, press it again and it should turn on.
-
-Create a crontab job.
-```sh
-crontab -e
-```
-Add this line at the end:
-```crontab
-aaaaaaaaa
-```
-Install the webserver.
-
-```sh
-cd /home/pi
-git clone https://github.com/dgaray01/sierrapi-manager
-cd sierrapi-manager
-npm install --save
-```
-The webserver runs on port 8080, so make sure this port is available.
 
 ___
 # Install image
@@ -81,8 +35,8 @@ Recomended apps:
 2) https://www.balena.io/etcher/
 
 Login info:
-Hostname: ``raspberrypi``
-User: ``pi``
+Hostname: ``sierrapi``
+User: ``root`` ``pi``
 Password: ``admin123``
 
 ---
