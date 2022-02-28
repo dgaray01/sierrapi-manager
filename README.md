@@ -1,4 +1,4 @@
-# SierraPi Manager
+# SierraPi Manager 📈
 ## _A simple node app for a SierraPi_
 
 ![N|Solid](	https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white)
@@ -11,7 +11,7 @@
 A simple node.js app made for customizing, setup, manage
 and control transmissions, wifi settings, check performance
 and more for your SierraPi!
-## Features
+## Features ⭐
 
 - Check RAM and Disk usage
 - Restart and power off your SierraPi
@@ -19,14 +19,15 @@ and more for your SierraPi!
 - Change your wifi hotspot password and wifi SSID
 - Secure and fast.
 
-## Installation
+## Installation ☁️
 
 ___
-# Install image
+# Install image 💿
 If you don't want to install it manually you can just download and install a custom .img file 
 to your SierraPi.
 
-[Download](http://cdn.dgaray.me/sierrapi1.img)
+[Download 👈](http://cdn.dgaray.me/sierrapi1.img)
+
 We do not guarantee this will work on other RaspberryPi model, only on RaspberryPi 4 Model B
 Now connect your microSD card to your computer and flash it using an imager. 
 
@@ -40,9 +41,9 @@ User: ``root`` ``pi``
 Password: ``admin123``
 
 ---
-## Development
+## Development 🔨
 
-Want to contribute? Great!
+Want to contribute? Great! 🪙
 
 There are severals ways you can contribute to this project.
 [PayPal](https://paypal.me/dgaray01)
@@ -51,4 +52,4 @@ There are severals ways you can contribute to this project.
 
 MIT
 
-**Free Software, Hell Yeah!**
+**Free Software, Hell Yeah! 🤘**
