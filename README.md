@@ -19,9 +19,6 @@ and more for your SierraPi!
 - Change your wifi hotspot password and wifi SSID
 - Secure and fast.
 
-## Installation ☁️
-
-___
 # Install image 💿
 If you don't want to install it manually you can just download and install a custom .img file 
 to your SierraPi.
