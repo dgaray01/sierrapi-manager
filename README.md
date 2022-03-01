@@ -23,7 +23,7 @@ and more for your SierraPi!
 If you don't want to install it manually you can just download and install a custom .img file 
 to your SierraPi.
 
-[Download 👈](https://drive.google.com/file/d/1w4M_-kEehu8wjMOmtfYauUFHGxf4n1xN/view?usp=sharing)
+[Download 👈](https://github.com/dgaray01/sierrapi-manager/releases/tag/Release)
 
 We do not guarantee this will work on other RaspberryPi model, only on RaspberryPi 4 Model B
 Now connect your microSD card to your computer and flash it using an imager. 
