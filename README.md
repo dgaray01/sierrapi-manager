@@ -46,7 +46,10 @@ Password: ``admin123``
 Want to contribute? Great! 🪙
 
 There are severals ways you can contribute to this project.
+
 [PayPal](https://paypal.me/dgaray01)
+
+[Stripe](https://buy.stripe.com/cN26p98Sk125fkYfYY)
 
 ## License
 
